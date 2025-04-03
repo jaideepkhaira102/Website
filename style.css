@@ -2,22 +2,34 @@
     --neutral-color: #f8f9fa;   /* 60% - Background & large sections */
     --primary-color: #007bff;   /* 30% - Buttons, headers, and accents */
     --secondary-color: #ff9800; /* 10% - Highlights, small elements */
+    background-image: url("backgroundimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    
 }
-
+a:hover{
+    cursor: pointer;
+}
 body {
+
+    width: 80%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--neutral-color);
-    background-image: url("BackgroundImage.jpg");
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
     color: var(--primary-color);
     text-align: center;
 }
 
 header {
-    background: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
     color: white;
     padding: 15px;
+
 }
 
 footer {
@@ -25,6 +37,17 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
+}
+.main-block{
+    display: grid;
+    padding: 5%;
+    gap: 5%;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: black;
+}
+
+.main-block img{
+    width: 100%;
 }
 
 button {

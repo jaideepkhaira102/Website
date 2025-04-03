@@ -1,12 +1,12 @@
 console.log("Navbar loaded!");
-var numberofsections = 4;
-const sections = ["Home", "About", "Services", "Contact", ];
+var numberofsections = 3;
+const sections = ["Main Menu", "About", "Contact" ];
 document.addEventListener("DOMContentLoaded", function() {
     // Create Navbar HTML as a string
     
     var navbarHTML = `
         <nav class="navbar">
-            <div class="logo">My Website</div>
+            <div class="logo">9 Kings</div>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-links">` ;
 
