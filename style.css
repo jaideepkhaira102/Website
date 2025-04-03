@@ -2,7 +2,7 @@
     --neutral-color: #f8f9fa;   /* 60% - Background & large sections */
     --primary-color: #007bff;   /* 30% - Buttons, headers, and accents */
     --secondary-color: #ff9800; /* 10% - Highlights, small elements */
-    background-image: url("backgroundimage.png");
+    background-image: url("pictures/backgroundimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -38,7 +38,7 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-.main-block{
+#main-inner{
     display: grid;
     padding: 5%;
     gap: 5%;
@@ -46,9 +46,21 @@ footer {
     background-color: black;
 }
 
-.main-block img{
+#main-inner img{
     width: 100%;
 }
+#main-inner-small{
+    display: grid;
+    padding: 5%;
+    gap: 5%;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: black;
+}
+
+#main-inner-small img{
+    width: 150%;
+}
+
 
 button {
     background: var(--primary-color);
