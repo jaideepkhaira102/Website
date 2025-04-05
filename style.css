@@ -1,3 +1,5 @@
+
+
 :root {
     --neutral-color: #f8f9fa;   /* 60% - Background & large sections */
     --primary-color: #007bff;   /* 30% - Buttons, headers, and accents */
@@ -46,21 +48,49 @@ footer {
     background-color: black;
 }
 
+#main-outer{
+    display: grid;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+}
+
 #main-inner img{
     width: 100%;
 }
 #main-inner-small{
     display: grid;
     padding: 5%;
-    gap: 5%;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 50fr);
+    grid-template-rows: auto;
     background-color: black;
+    box-sizing: border-box; /* Important */
+    width: fit-content;
+    max-width: 100%;
 }
 
 #main-inner-small img{
-    width: 150%;
+    width: 90%;
+    height: auto;
+    display: block;
 }
 
+#main-inner-desc{
+    display: grid;
+    text-align: left;
+    padding: 5%;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    background-color: black;
+    box-sizing: border-box; /* Important */
+    width: fit-content;
+    max-width: 100%;
+}
+#main-inner-desc img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 button {
     background: var(--primary-color);
