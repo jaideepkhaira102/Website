@@ -11,27 +11,28 @@ const kings = [
         description: "bla bla bla bla" },
     { id: 4, name: "King of Greed", image: "pictures/king_of_greed.png" , link: gotokingsdescription, tagname: "king_of_greed", 
         description: "bla bla bla bla" },
-    { id: 5, name: "Coming Soon", image: "pictures/kings_coming_soon_1.png" , link: gotomainmenu, tagname: "king_of_nothing"},
-    { id: 6, name: "Coming Soon", image: "pictures/kings_coming_soon_2.png" , link: gotomainmenu, tagname: "king_of_nothing"},
-    { id: 7, name: "Coming Soon", image: "pictures/kings_coming_soon_3.png" , link: gotomainmenu, tagname: "king_of_nothing"},
-    { id: 8, name: "Coming Soon", image: "pictures/kings_coming_soon_4.png" , link: gotomainmenu, tagname: "king_of_nothing"},
+    { id: 5, name: "Coming Soon", image: "pictures/kings_coming_soon_1.png" , link: gotomainmenu, tagname: "coming_soon_1"},
+    { id: 6, name: "Coming Soon", image: "pictures/kings_coming_soon_2.png" , link: gotomainmenu, tagname: "coming_soon_2"},
+    { id: 7, name: "Coming Soon", image: "pictures/kings_coming_soon_3.png" , link: gotomainmenu, tagname: "coming_soon_3"},
+    { id: 8, name: "Coming Soon", image: "pictures/kings_coming_soon_4.png" , link: gotomainmenu, tagname: "coming_soon_4"},
 ]
 
 const cards = [
     { id: 1, name: "Castle", image: "pictures/bases/castle.png" , link: gotocardsdescription , tags: ["king_of_nothing", "base"], 
+        damage: "10", hitspeed: "0.29", crit: "0%",  gamedesc: "Hurls a stone projectile into your enemy",
         description: "bla bla bla bla" },
-    { id: 2, name: "Citadel", image: "pictures/bases/citadel.png" , link: gotomainmenu , tags: ["king_of_spells", "base"] , 
+    { id: 2, name: "Citadel", image: "pictures/bases/citadel.png" , link: gotocardsdescription , tags: ["king_of_spells", "base"] , 
         description: "bla bla bla bla" },
-    { id: 3, name: "Palace", image: "pictures/bases/palace.png" , link: gotomainmenu , tags: ["king_of_greed", "base"] , 
+    { id: 3, name: "Palace", image: "pictures/bases/palace.png" , link: gotocardsdescription , tags: ["king_of_greed", "base"] , 
         description: "bla bla bla bla" },
-    { id: 4, name: "Ziggurat", image: "pictures/bases/ziggurat.png" , link: gotomainmenu , tags: ["king_of_blood", "base"] , 
+    { id: 4, name: "Ziggurat", image: "pictures/bases/ziggurat.png" , link: gotocardsdescription , tags: ["king_of_blood", "base"] , 
         description: "bla bla bla bla" },
-    { id: 5, name: "Blacksmith", image: "pictures/buildings/blacksmith.png" , link: gotomainmenu , tags: ["king_of_nothing", "building"] },
-    { id: 6, name: "Cemetry", image: "pictures/buildings/cemetry.png" , link: gotomainmenu , tags: ["king_of_blood", "building"] },
-    { id: 7, name: "Demons Altar", image: "pictures/buildings/demons_altar.png" , link: gotomainmenu , tags: ["king_of_blood", "building"] },
-    { id: 8, name: "Farm", image: "pictures/buildings/farm.png" , link: gotomainmenu , tags: ["king_of_nothing", "building"] },
-    { id: 9, name: "Library", image: "pictures/buildings/library.png" , link: gotomainmenu , tags: ["king_of_spells", "building"] },
-    { id: 10, name: "Vault", image: "pictures/buildings/vault.png" , link: gotomainmenu , tags: ["king_of_greed", "building"] },
+    { id: 5, name: "Blacksmith", image: "pictures/buildings/blacksmith.png" , link: gotocardsdescription , tags: ["king_of_nothing", "building"] },
+    { id: 6, name: "Cemetry", image: "pictures/buildings/cemetry.png" , link: gotocardsdescription , tags: ["king_of_blood", "building"] },
+    { id: 7, name: "Demons Altar", image: "pictures/buildings/demons_altar.png" , link: gotocardsdescription , tags: ["king_of_blood", "building"] },
+    { id: 8, name: "Farm", image: "pictures/buildings/farm.png" , link: gotocardsdescription , tags: ["king_of_nothing", "building"] },
+    { id: 9, name: "Library", image: "pictures/buildings/library.png" , link: gotocardsdescription , tags: ["king_of_spells", "building"] },
+    { id: 10, name: "Vault", image: "pictures/buildings/vault.png" , link: gotocardsdescription , tags: ["king_of_greed", "building"] },
     { id: 11, name: "Carnage", image: "pictures/enchantments/carnage.png" , link: gotomainmenu , tags: ["king_of_blood", "enchantments"] },
     { id: 12, name: "Combustion", image: "pictures/enchantments/combustion.png" , link: gotomainmenu , tags: ["king_of_spells", "enchantments"] },
     { id: 13, name: "Midas Touch", image: "pictures/enchantments/midas_touch.png" , link: gotomainmenu , tags: ["king_of_greed", "enchantments"] },
@@ -54,7 +55,9 @@ const cards = [
     { id: 30, name: "Knight", image: "pictures/troops/knight.png" , link: gotomainmenu , tags: ["king_of_nothing", "troops"] },
     { id: 31, name: "Mercenary", image: "pictures/troops/mercenary.png" , link: gotomainmenu , tags: ["king_of_greed", "troops"] },
     { id: 32, name: "Shaman", image: "pictures/troops/shaman.png" , link: gotomainmenu , tags: ["king_of_spells", "troops"] },
-    { id: 33, name: "Soldier", image: "pictures/troops/soldier.png" , link: gotomainmenu , tags: ["king_of_nothing", "troops"] },
+    { id: 33, name: "Soldier", image: "pictures/troops/soldier.png" , link: gotomainmenu , tags: ["king_of_nothing", "troops"] ,
+        health: "23", damage: "3", hitspeed: "0.5", crit: "5%", troopcount: "9",
+    },
     { id: 34, name: "Thief", image: "pictures/troops/thief.png" , link: gotomainmenu , tags: ["king_of_greed", "troops"] },
     { id: 35, name: "Warlock", image: "pictures/troops/warlock.png" , link: gotomainmenu , tags: ["king_of_spells", "troops"] },
     { id: 36, name: "Wizard", image: "pictures/troops/wizard.png" , link: gotomainmenu , tags: ["king_of_spells", "troops"] },
@@ -195,7 +198,7 @@ function gotokingsdescription(kingsname){
     var tempcards = cards.filter(cards => cards.tags.includes(kingsname));
     console.log(tempcards);
     for(var i=0; i<tempcards.length; i++){
-        creatorutilwithpara(tempcards[i].name, tempcards[i].image, tempcards[i].link, maindiv, kingsname);
+        creatorutilwithpara(tempcards[i].name, tempcards[i].image, tempcards[i].link, maindiv, tempcards[i].name);
     }
     menudiv.appendChild(descdiv);
     menudiv.appendChild(maindiv);
@@ -239,7 +242,7 @@ function gotocards(){
     maindiv.id = 'main-inner-small';
     
     for(var i=0; i<cards.length; i++){
-        creatorutilwithpara(cards[i].name, cards[i].image, cards[i].link, maindiv, "Castle");
+        creatorutilwithpara(cards[i].name, cards[i].image, cards[i].link, maindiv, cards[i].name);
     }
 
     menudiv.appendChild(maindiv);
@@ -248,6 +251,7 @@ function gotocards(){
 
 function gotocardsdescription(cardsname){
     remover();
+    var tempcards = cards.find(cards => cards.name == cardsname);
     state = 'cards-description';
     const main = document.getElementById('mainContent');
 
@@ -255,16 +259,17 @@ function gotocardsdescription(cardsname){
     menudiv.id = 'main-outer';
 
     const description = document.createElement('div');
-    description.innerHTML = cards[0].description;
+    description.innerHTML = tempcards.description;
 
     const descdiv = document.createElement('div');
     descdiv.id = 'main-inner-desc';
     descdiv.appendChild(description);
-    var tempcards = cards.find(cards => cards.name == cardsname);
-    var tempkings = tempcards.tags.some(tag => kings.some(king => king.tagname == tag));
+    console.log(tempcards)
+
+    var tempkings = kings.filter(king => tempcards.tags.includes(king.tagname));
     console.log('tempking is : ', tempkings)
     
-    creatorutilwithpara(tempcards.name, tempcards.image, tempcards.link, descdiv, tempkings.tagname);
+    creatorutilwithpara(tempcards.name, tempcards.image, tempcards.link, descdiv, tempkings[0].tagname);
 
 
     const maindiv = document.createElement('div');
@@ -272,8 +277,8 @@ function gotocardsdescription(cardsname){
     console.log(cardsname)
 
     
-    console.log(tempcards);
-    creatorutilwithpara(tempkings.name, tempkings.image, tempkings.link, maindiv, tempkings.tagname);
+    console.log('temp king is  : ',tempkings[0].name);
+    creatorutilwithpara(tempkings[0].name, tempkings[0].image, tempkings[0].link, maindiv, tempkings[0].tagname);
 
     menudiv.appendChild(descdiv);
     menudiv.appendChild(maindiv);
